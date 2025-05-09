@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>创建博客 | Hexo</title>
+  <title>芋道破解文件 | 学习之路</title>
 
   <link rel="icon" type="image/jpeg" href="/medias/hexo-logo.jpg">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
@@ -191,7 +191,7 @@
   <div class="drawer-box" :class="{'active': visible}">
     <div class="drawer-box-head bg-color">
       <img class="drawer-box-head_logo lazyload placeholder" src="/medias/hexo-logo.jpg" class="lazyload placeholder" data-srcset="/medias/hexo-logo.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="logo">
-      <h3 class="drawer-box-head_title">Hexo</h3>
+      <h3 class="drawer-box-head_title">学习之路</h3>
       <h5 class="drawer-box-head_desc"></h5>
     </div>
     
@@ -362,7 +362,7 @@
           <img src="/medias/hexo-logo.jpg" class="lazyload placeholder" data-srcset="/medias/hexo-logo.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="logo">
         </div>
       
-      <a href="/" class="logo">Hexo</a>
+      <a href="/" class="logo">学习之路</a>
     </div>
     <nav class="navbar">
       <ul class="menu">
@@ -566,14 +566,14 @@
 
 
 <div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
-  background-position: center center;position: relative;background-image:url('https://pic2.zhimg.com/80/v2-e22aaad20d20634f506f57fff0fcbc17_1440w.webp')">
+  background-position: center center;position: relative;background-image:url('https://pica.zhimg.com/80/v2-573ac3e25de03fad9c32add5a05e5cfc_1440w.webp')">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
   <div class="post-detail-header_info-box">
     <div class="title-box">
       <span class="title">
-        创建博客
+        芋道破解文件
       </span>
     </div>
     
@@ -604,54 +604,18 @@
   <div class="main-content">
     <article class="post post-detail">
       <div class="post-content">
-        <h2 id="1-hexo介绍"><a href="#1-hexo介绍" class="headerlink" title="1.hexo介绍"></a>1.hexo介绍</h2><p>hexo是一个静态的个人博客框架，静态的意思就是没有后台，就是直接将文件放到Web服务器中通过浏览器进行访问</p>
-<p>官网链接：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">https://hexo.io/zh-cn/index.html</a></p>
-<h2 id="2-安装"><a href="#2-安装" class="headerlink" title="2.安装"></a>2.安装</h2><h4 id="1-安装node-js"><a href="#1-安装node-js" class="headerlink" title="1) 安装node.js"></a>1) 安装node.js</h4><p>hexo需要node.js支持，所以需要先安装node.js，至少16.14版本以上</p>
-<h4 id="2-安装cnpm"><a href="#2-安装cnpm" class="headerlink" title="2) 安装cnpm"></a>2) 安装cnpm</h4><p>用npm安装一个淘宝的包管理工具，会快一些（当然也可以对npm换源，这里就不说了）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -g cnpm --registry.npm.taobao.org  <span class="comment"># -g就是全局安装</span></span><br></pre></td></tr></table></figure>
+        <p><img src="C:%5CUsers%5C%E5%B0%98%E7%91%BE%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20241009202858426.png" class="lazyload placeholder" data-srcset="C:%5CUsers%5C%E5%B0%98%E7%91%BE%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20241009202858426.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20241009202858426"></p>
+<p><a target="_blank" rel="noopener" href="https://www.iocoder.cn/XXL-JOB/install/?qun">https://www.iocoder.cn/XXL-JOB/install/?qun</a><br>访问这个时把这个js文件屏蔽掉</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@TenantIgnore</span></span><br><span class="line">作用在方法上面，标注该方法不需要租户校验</span><br></pre></td></tr></table></figure>
 
-<ol start="3">
-<li>安装hexo</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#安装脚手架-全局</span></span><br><span class="line">cnpm install -g hexo-cli</span><br><span class="line"><span class="comment">#查看版本</span></span><br><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
 
-<h2 id="3-先在本地搭建博客进行测试"><a href="#3-先在本地搭建博客进行测试" class="headerlink" title="3.先在本地搭建博客进行测试"></a>3.先在本地搭建博客进行测试</h2><h4 id="1）初始化："><a href="#1）初始化：" class="headerlink" title="1）初始化："></a>1）初始化：</h4><p>找一个目录建立一个空的文件夹，专门用来放博客的静态文件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">d:</span><br><span class="line"><span class="built_in">cd</span> file</span><br><span class="line"><span class="built_in">mkdir</span> blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">hexo init  <span class="comment"># 初始化</span></span><br><span class="line"><span class="comment">#初始化有error就执行</span></span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
 
-<h4 id="2）-本地启动"><a href="#2）-本地启动" class="headerlink" title="2） 本地启动"></a>2） 本地启动</h4><p>由于是基于node.js，所以如果在本次启动的话会在本地开启一个web服务：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<h4 id="5-4-2-局部配置时间格式"><a href="#5-4-2-局部配置时间格式" class="headerlink" title="5.4.2 局部配置时间格式"></a>5.4.2 局部配置时间格式</h4><p>如果只是部分 VO 的字段想自定义 <code>yyyy-MM-dd HH:mm:ss</code> 或其它时间格式，可通过 Jackson 内置的 <code>@JsonFormat</code> 注解，如下所示：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// UserRespVO.java</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@JsonSerialize(using = LocalDateTimeSerializer.class)</span> <span class="comment">// 序列化（响应）</span></span><br><span class="line"><span class="meta">@JsonDeserialize(using = LocalDateDeserializer.class)</span> <span class="comment">// 反序列化（请求）</span></span><br><span class="line"><span class="meta">@JsonFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;)</span></span><br><span class="line"><span class="keyword">private</span> LocalDateTime createTime;</span><br></pre></td></tr></table></figure>
 
-<h2 id="4-将博客部署到github上"><a href="#4-将博客部署到github上" class="headerlink" title="4.将博客部署到github上"></a>4.将博客部署到github上</h2><p>这样我们就可以通过github的地址访问个人博客</p>
-<h4 id="1-首先创建一个新的仓库："><a href="#1-首先创建一个新的仓库：" class="headerlink" title="1) 首先创建一个新的仓库："></a>1) 首先创建一个新的仓库：</h4><p>仓库名是固定的：必须是<code>你的用户名.github.io</code></p>
-<p><img src="https://resources.xbov.cn/temp/FL250509195645816F397013698464.png" class="lazyload placeholder" data-srcset="https://resources.xbov.cn/temp/FL250509195645816F397013698464.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="img"></p>
-<p>这个页面先不要关，我们要用到箭头所指向的仓库地址：</p>
-<p><img src="https://resources.xbov.cn/temp/FL250509195645816F397013698464.png" class="lazyload placeholder" data-srcset="https://resources.xbov.cn/temp/FL250509195645816F397013698464.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="img"></p>
-<h4 id="2-回到windows终端安装一个插件"><a href="#2-回到windows终端安装一个插件" class="headerlink" title="2) 回到windows终端安装一个插件"></a>2) 回到windows终端安装一个插件</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
 
-<h4 id="3-修改配置文件-config-yml（就在博客目录下）"><a href="#3-修改配置文件-config-yml（就在博客目录下）" class="headerlink" title="3) 修改配置文件_config.yml（就在博客目录下）"></a>3) 修改配置文件<code>_config.yml</code>（就在博客目录下）</h4><p>在最下方找到 Deployment</p>
-<p>修改配置如下(注意：每个冒号后都要有空格)：</p>
-<p><img src="https://resources.xbov.cn/temp/FL250509202945068385ECF3699F24.png" class="lazyload placeholder" data-srcset="https://resources.xbov.cn/temp/FL250509202945068385ECF3699F24.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="img"></p>
-<h4 id="4-一键部署"><a href="#4-一键部署" class="headerlink" title="4) 一键部署"></a>4) 一键部署</h4><p>在此之前需要先在github上生成一个token，</p>
-<p><img src="https://resources.xbov.cn/temp/FL250509203114646951125BA4F934.png" class="lazyload placeholder" data-srcset="https://resources.xbov.cn/temp/FL250509203114646951125BA4F934.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="img"></p>
-<p><img src="https://resources.xbov.cn/temp/FL250509203114668420D73876F844.png" class="lazyload placeholder" data-srcset="https://resources.xbov.cn/temp/FL250509203114668420D73876F844.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="img"></p>
-<p><img src="https://resources.xbov.cn/temp/FL25050920311509061C1D0D758284.png" class="lazyload placeholder" data-srcset="https://resources.xbov.cn/temp/FL25050920311509061C1D0D758284.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="img"></p>
-<p>token主要用来上传代码到github时直接通过token登录，不需要再去通过用户，密码登录了</p>
-<p><img src="https://resources.xbov.cn/temp/FL25050920311456812DA2719C5FF4.png" class="lazyload placeholder" data-srcset="https://resources.xbov.cn/temp/FL25050920311456812DA2719C5FF4.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="img"></p>
-<p>然后再执行</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
-<p>只要github仓库里面有代码之后说明成功了</p>
-<p><img src="https://resources.xbov.cn/temp/FL25050920311458332E3C4A2A58E4.png" class="lazyload placeholder" data-srcset="https://resources.xbov.cn/temp/FL25050920311458332E3C4A2A58E4.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="img"></p>
-<p>直接访问github的域名：<code>https://你的用户名.github.io/</code></p>
-<p><img src="https://resources.xbov.cn/temp/FL2505092035446700A260580A3414.png" class="lazyload placeholder" data-srcset="https://resources.xbov.cn/temp/FL2505092035446700A260580A3414.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="img"></p>
-<h2 id="4-更换博客主题"><a href="#4-更换博客主题" class="headerlink" title="4. 更换博客主题"></a>4. 更换博客主题</h2><h4 id="1）-主题下载"><a href="#1）-主题下载" class="headerlink" title="1） 主题下载"></a>1） 主题下载</h4><p>可直接访问hexo官网找到想要的主题，直接下载安装包解压到themes目录下面</p>
-<p><img src="https://resources.xbov.cn/temp/FL250509203114557BA0CCC25E66D4.png" class="lazyload placeholder" data-srcset="https://resources.xbov.cn/temp/FL250509203114557BA0CCC25E66D4.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="img"></p>
-<p>2） 主题应用</p>
-<p>在根目录下的.config.yml里面修改theme：为下载的主题，然后再执行访问看是否成功</p>
-<p>依次执行以下命令</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://resources.xbov.cn/temp/FL250509203114587AABDFF7DEF9D4.png" class="lazyload placeholder" data-srcset="https://resources.xbov.cn/temp/FL250509203114587AABDFF7DEF9D4.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="img"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">接口幂等性（前端连续调用两次请求直接截断）</span><br><span class="line"><span class="meta">@Idempotent(timeout = 10, timeUnit = TimeUnit.SECONDS, message = &quot;正在添加用户中，请勿重复提交&quot;)</span></span><br><span class="line">每 <span class="number">10</span> 秒钟，所有用户，只能操作一次</span><br><span class="line">接口限流（前端在一定时间内只能调用多少次接口）</span><br><span class="line"><span class="meta">@RateLimiter(count = 10, timeUnit = TimeUnit.MINUTES)</span></span><br><span class="line">每分钟，所有用户，只能操作 <span class="number">10</span> 次</span><br><span class="line">    疑问：如果想按照每个用户，或者每个 IP，限制请求呢？</span><br><span class="line">	可设置该注解的 keyResolver 属性，可选择的有：</span><br><span class="line">DefaultRateLimiterKeyResolver：全局级别</span><br><span class="line">UserRateLimiterKeyResolver：用户 ID 级别</span><br><span class="line">ClientIpRateLimiterKeyResolver：用户 IP 级别</span><br><span class="line">ServerNodeRateLimiterKeyResolver：服务器 Node 级别</span><br><span class="line">ExpressionIdempotentKeyResolver：自定义级别，</span><br></pre></td></tr></table></figure>
 
       </div>
       <div class="post-tags-categories">
@@ -665,7 +629,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>link:  </strong>
-    <a href="/2025/05/08/study/创建博客/" target="_blank" title="创建博客">https://chenjin111.github.io/2025/05/08/study/创建博客/</a>
+    <a href="/2025/05/08/study/芋道/" target="_blank" title="芋道破解文件">https://chenjin111.github.io/2025/05/08/study/芋道/</a>
     </li>
     <li class="post-copyright-license">
       <strong>Copyright notice:   </strong>
@@ -687,18 +651,17 @@
   <div class="post-nav-prev post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="https://pic1.zhimg.com/80/v2-03a22891ccba9bccf6424dfd7cbf4be7_1440w.webp" class="lazyload placeholder" data-srcset="https://pic1.zhimg.com/80/v2-03a22891ccba9bccf6424dfd7cbf4be7_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+      <img class="lazyload lazyload placeholder" src="https://picx.zhimg.com/80/v2-85c31120acff76826ab53ea8934ef4bb_1440w.webp" class="lazyload placeholder" data-srcset="https://picx.zhimg.com/80/v2-85c31120acff76826ab53ea8934ef4bb_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
     </div>
-    <a href="/2025/05/09/study/es/" class="post-nav-link">
+    <a href="/2025/05/08/study/%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/" class="post-nav-link">
       <div class="title">
         <i class="fas fa-angle-left"></i> Prev:
-        <div class="title-text"></div>
+        <div class="title-text">框架整合</div>
       </div>
       
       <!-- <div class="content">
-        一、es搜索
-1.String、Integer匹配
-1queryBuilder.must(QueryBuilders.t
+        一、Mybatis
+1.1配置pom文件创建 Maven 来构建项目，则需将下面的依赖代码置于 pom.xml 文件中：
       </div> -->
     </a>
   </div>
@@ -709,15 +672,15 @@
   <div class="post-nav-next post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="https://pic3.zhimg.com/80/v2-7cfc909ebe8d83683909846edd6b5232_1440w.webp" class="lazyload placeholder" data-srcset="https://pic3.zhimg.com/80/v2-7cfc909ebe8d83683909846edd6b5232_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
+      <img class="lazyload lazyload placeholder" src="https://pic4.zhimg.com/80/v2-83ea273b88e119d9615aed0d89aad4ab_1440w.webp" class="lazyload placeholder" data-srcset="https://pic4.zhimg.com/80/v2-83ea273b88e119d9615aed0d89aad4ab_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
     </div>
-    <a href="/2025/05/08/study/%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="post-nav-link">
+    <a href="/2025/05/08/study/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/" class="post-nav-link">
       <div class="title">
         Next: <i class="fas fa-angle-right"></i>
-        <div class="title-text">服务器文档</div>
+        <div class="title-text">软件工具</div>
       </div>
       <!-- <div class="content">
-        一、公共组件安装1.安装docker123yum install -y yum-utils \           de
+        android studio(2020,4.1.2)android-studio-ide-201.7042882-win
       </div> -->
     </a>
   </div>
@@ -866,11 +829,11 @@
           <h2>尘瑾</h2>
         
         
-          <p>加油</p>
+          <p>加油少年！！！！</p>
 
         
         
-          <p><span id="jinrishici-sentence">Hexo</span></p>
+          <p><span id="jinrishici-sentence">学习之路</span></p>
           <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
         
       </div>
@@ -939,7 +902,7 @@
   <div class='content'>
     <div class="toc-main">
       <div class="toc-content">
-        <!-- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-hexo%E4%BB%8B%E7%BB%8D"><span class="toc-text">1.hexo介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%AE%89%E8%A3%85"><span class="toc-text">2.安装</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%AE%89%E8%A3%85node-js"><span class="toc-text">1) 安装node.js</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%AE%89%E8%A3%85cnpm"><span class="toc-text">2) 安装cnpm</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%85%88%E5%9C%A8%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%BF%9B%E8%A1%8C%E6%B5%8B%E8%AF%95"><span class="toc-text">3.先在本地搭建博客进行测试</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%EF%BC%89%E5%88%9D%E5%A7%8B%E5%8C%96%EF%BC%9A"><span class="toc-text">1）初始化：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%EF%BC%89-%E6%9C%AC%E5%9C%B0%E5%90%AF%E5%8A%A8"><span class="toc-text">2） 本地启动</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%B0%86%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A"><span class="toc-text">4.将博客部署到github上</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E9%A6%96%E5%85%88%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9A%84%E4%BB%93%E5%BA%93%EF%BC%9A"><span class="toc-text">1) 首先创建一个新的仓库：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%9B%9E%E5%88%B0windows%E7%BB%88%E7%AB%AF%E5%AE%89%E8%A3%85%E4%B8%80%E4%B8%AA%E6%8F%92%E4%BB%B6"><span class="toc-text">2) 回到windows终端安装一个插件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E4%BF%AE%E6%94%B9%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6-config-yml%EF%BC%88%E5%B0%B1%E5%9C%A8%E5%8D%9A%E5%AE%A2%E7%9B%AE%E5%BD%95%E4%B8%8B%EF%BC%89"><span class="toc-text">3) 修改配置文件_config.yml（就在博客目录下）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2"><span class="toc-text">4) 一键部署</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E6%9B%B4%E6%8D%A2%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98"><span class="toc-text">4. 更换博客主题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%EF%BC%89-%E4%B8%BB%E9%A2%98%E4%B8%8B%E8%BD%BD"><span class="toc-text">1） 主题下载</span></a></li></ol></li></ol></li></ol> -->
+        <!-- <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-4-2-%E5%B1%80%E9%83%A8%E9%85%8D%E7%BD%AE%E6%97%B6%E9%97%B4%E6%A0%BC%E5%BC%8F"><span class="toc-text">5.4.2 局部配置时间格式</span></a></li></ol> -->
         <div class="toc"></div>
       </div>
     </div>
@@ -972,18 +935,18 @@
             
 
             <div class="post-img-box">
-              <a href="/2025/05/09/study/linux/" class="post-img " style="background-size: cover; 
+              <a href="/2025/05/08/hexo/%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://pic1.zhimg.com/80/v2-03a22891ccba9bccf6424dfd7cbf4be7_1440w.webp" class="lazyload placeholder" data-srcset="https://pic1.zhimg.com/80/v2-03a22891ccba9bccf6424dfd7cbf4be7_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://pic2.zhimg.com/80/v2-e22aaad20d20634f506f57fff0fcbc17_1440w.webp" class="lazyload placeholder" data-srcset="https://pic2.zhimg.com/80/v2-e22aaad20d20634f506f57fff0fcbc17_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">05-09</span>
+                  <span class="post-date">05-08</span>
                 
               </div>
-              <a class="post-title" href="/2025/05/09/study/linux/">no title</a>
+              <a class="post-title" href="/2025/05/08/hexo/%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/">创建博客</a>
             </div>
           </div>
         
@@ -993,18 +956,18 @@
             
 
             <div class="post-img-box">
-              <a href="/2025/05/09/study/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/" class="post-img " style="background-size: cover; 
+              <a href="/2025/05/08/study/es/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://pic1.zhimg.com/80/v2-03a22891ccba9bccf6424dfd7cbf4be7_1440w.webp" class="lazyload placeholder" data-srcset="https://pic1.zhimg.com/80/v2-03a22891ccba9bccf6424dfd7cbf4be7_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://pic2.zhimg.com/80/v2-e22aaad20d20634f506f57fff0fcbc17_1440w.webp" class="lazyload placeholder" data-srcset="https://pic2.zhimg.com/80/v2-e22aaad20d20634f506f57fff0fcbc17_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">05-09</span>
+                  <span class="post-date">05-08</span>
                 
               </div>
-              <a class="post-title" href="/2025/05/09/study/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/">no title</a>
+              <a class="post-title" href="/2025/05/08/study/es/">ES学习</a>
             </div>
           </div>
         
@@ -1014,18 +977,18 @@
             
 
             <div class="post-img-box">
-              <a href="/2025/05/09/study/%E8%8A%8B%E9%81%93%E5%AF%BC%E5%87%BA/" class="post-img " style="background-size: cover; 
+              <a href="/2025/05/08/study/linux/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://pic1.zhimg.com/80/v2-03a22891ccba9bccf6424dfd7cbf4be7_1440w.webp" class="lazyload placeholder" data-srcset="https://pic1.zhimg.com/80/v2-03a22891ccba9bccf6424dfd7cbf4be7_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://pic2.zhimg.com/80/v2-e22aaad20d20634f506f57fff0fcbc17_1440w.webp" class="lazyload placeholder" data-srcset="https://pic2.zhimg.com/80/v2-e22aaad20d20634f506f57fff0fcbc17_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">05-09</span>
+                  <span class="post-date">05-08</span>
                 
               </div>
-              <a class="post-title" href="/2025/05/09/study/%E8%8A%8B%E9%81%93%E5%AF%BC%E5%87%BA/">no title</a>
+              <a class="post-title" href="/2025/05/08/study/linux/">Linux指令</a>
             </div>
           </div>
         
@@ -1035,18 +998,18 @@
             
 
             <div class="post-img-box">
-              <a href="/2025/05/09/study/%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/" class="post-img " style="background-size: cover; 
+              <a href="/2025/05/08/study/%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://pic1.zhimg.com/80/v2-03a22891ccba9bccf6424dfd7cbf4be7_1440w.webp" class="lazyload placeholder" data-srcset="https://pic1.zhimg.com/80/v2-03a22891ccba9bccf6424dfd7cbf4be7_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://pic3.zhimg.com/80/v2-7cfc909ebe8d83683909846edd6b5232_1440w.webp" class="lazyload placeholder" data-srcset="https://pic3.zhimg.com/80/v2-7cfc909ebe8d83683909846edd6b5232_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">05-09</span>
+                  <span class="post-date">05-08</span>
                 
               </div>
-              <a class="post-title" href="/2025/05/09/study/%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/">no title</a>
+              <a class="post-title" href="/2025/05/08/study/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器文档</a>
             </div>
           </div>
         
@@ -1056,18 +1019,18 @@
             
 
             <div class="post-img-box">
-              <a href="/2025/05/09/study/%E8%8A%8B%E9%81%93/" class="post-img " style="background-size: cover; 
+              <a href="/2025/05/08/study/%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://pic1.zhimg.com/80/v2-03a22891ccba9bccf6424dfd7cbf4be7_1440w.webp" class="lazyload placeholder" data-srcset="https://pic1.zhimg.com/80/v2-03a22891ccba9bccf6424dfd7cbf4be7_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://picx.zhimg.com/80/v2-85c31120acff76826ab53ea8934ef4bb_1440w.webp" class="lazyload placeholder" data-srcset="https://picx.zhimg.com/80/v2-85c31120acff76826ab53ea8934ef4bb_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">05-09</span>
+                  <span class="post-date">05-08</span>
                 
               </div>
-              <a class="post-title" href="/2025/05/09/study/%E8%8A%8B%E9%81%93/">no title</a>
+              <a class="post-title" href="/2025/05/08/study/%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/">框架整合</a>
             </div>
           </div>
         

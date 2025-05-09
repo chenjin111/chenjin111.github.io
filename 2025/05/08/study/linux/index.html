@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>Hexo</title>
+  <title>Linux指令 | 学习之路</title>
 
   <link rel="icon" type="image/jpeg" href="/medias/hexo-logo.jpg">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
@@ -191,7 +191,7 @@
   <div class="drawer-box" :class="{'active': visible}">
     <div class="drawer-box-head bg-color">
       <img class="drawer-box-head_logo lazyload placeholder" src="/medias/hexo-logo.jpg" class="lazyload placeholder" data-srcset="/medias/hexo-logo.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="logo">
-      <h3 class="drawer-box-head_title">Hexo</h3>
+      <h3 class="drawer-box-head_title">学习之路</h3>
       <h5 class="drawer-box-head_desc"></h5>
     </div>
     
@@ -362,7 +362,7 @@
           <img src="/medias/hexo-logo.jpg" class="lazyload placeholder" data-srcset="/medias/hexo-logo.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="logo">
         </div>
       
-      <a href="/" class="logo">Hexo</a>
+      <a href="/" class="logo">学习之路</a>
     </div>
     <nav class="navbar">
       <ul class="menu">
@@ -566,21 +566,21 @@
 
 
 <div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
-  background-position: center center;position: relative;background-image:url('https://pic1.zhimg.com/80/v2-03a22891ccba9bccf6424dfd7cbf4be7_1440w.webp')">
+  background-position: center center;position: relative;background-image:url('https://pic2.zhimg.com/80/v2-e22aaad20d20634f506f57fff0fcbc17_1440w.webp')">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
   <div class="post-detail-header_info-box">
     <div class="title-box">
       <span class="title">
-        
+        Linux指令
       </span>
     </div>
     
     
       
         <span class="post-detail-header_date">
-          <i class="fas fa-calendar"></i> Published in：2025-05-09 |
+          <i class="fas fa-calendar"></i> Published in：2025-05-08 |
         </span>
       
 
@@ -604,8 +604,11 @@
   <div class="main-content">
     <article class="post post-detail">
       <div class="post-content">
-        <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">   // 向导出列表中添加一条记录</span><br><span class="line">        ExportRecordDTO exportRecordDTO = new ExportRecordDTO();</span><br><span class="line">        exportRecordDTO.setExportType(GlobalConstants.ExportType.ARCHIVE); // 导出类型为档案信息</span><br><span class="line">        exportRecordDTO.setExportStatus(GlobalConstants.ExportState.ING); // 导出状态为等待中</span><br><span class="line">        Long exportId = exportRecordApi.create(exportRecordDTO).getCheckedData();</span><br><span class="line">        // 查询数据</span><br><span class="line">        List&lt;ArchivesDTO&gt; list = list(dto);</span><br><span class="line">//        list.stream().forEach(item -&gt; &#123;</span><br><span class="line">//            //拼接域名</span><br><span class="line">//            item.setContractUrl(item.getContractUrl());</span><br><span class="line">//        &#125;);</span><br><span class="line">        // 获取当前时间并格式化</span><br><span class="line">        String currentTime = new SimpleDateFormat(&quot;yyyyMMddHHmmss&quot;).format(new Date());</span><br><span class="line">        String fileName = String.format(&quot;archives-%s&quot;, currentTime + &quot;.xlsx&quot;);</span><br><span class="line">        File file = new File(tomcatBaseDir + fileName);</span><br><span class="line">        FileOutputStream fos = new FileOutputStream(file);</span><br><span class="line">        EasyExcel.write(fos, ArchivesExcelVO.class)</span><br><span class="line">                .autoCloseStream(false) // 不要自动关闭，交给 Servlet 自己处理</span><br><span class="line">                .registerWriteHandler(new LongestMatchColumnWidthStyleStrategy()) // 基于 column 长度，自动适配。最大 255 宽度</span><br><span class="line">                .registerWriteHandler(new SelectSheetWriteHandler(ArchivesExcelVO.class)) // 基于固定 sheet 实现下拉框</span><br><span class="line">                .registerConverter(new LongStringConverter()) // 避免 Long 类型丢失精度</span><br><span class="line">                .sheet(&quot;档案数据&quot;).doWrite(BeanUtils.toBean(list, ArchivesExcelVO.class));</span><br><span class="line">        // 上传文件</span><br><span class="line">        FileInputStream fis = new FileInputStream(file);</span><br><span class="line">        MultipartFile multipartFile = uploadApi.buildFile(fileName, fis);</span><br><span class="line">        // 获取当前年月 (yyyy-MM)</span><br><span class="line">        String yearMonth = LocalDate.now().format(DateTimeFormatter.ofPattern(&quot;yyyy-MM&quot;));</span><br><span class="line">        // 替换路径中的 %s 为当前年月</span><br><span class="line">        String filePath = String.format(ARCHIVE, yearMonth) + fileName;</span><br><span class="line">        Boolean checkedData = uploadApi.createFile(filePath, multipartFile).getCheckedData();</span><br><span class="line">        if (checkedData) &#123;</span><br><span class="line">            // 更新导出记录状态为成功</span><br><span class="line">            exportRecordApi.update(ExportRecordDTO.builder()</span><br><span class="line">                    .id(exportId)</span><br><span class="line">                    .url(filePath)</span><br><span class="line">                    .exportStatus(GlobalConstants.ExportState.SUCCESSFUL)</span><br><span class="line">                    .build());</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            // 更新导出记录状态为失败</span><br><span class="line">            exportRecordApi.update(ExportRecordDTO.builder()</span><br><span class="line">                    .id(exportId)</span><br><span class="line">                    .exportStatus(GlobalConstants.ExportState.FAILED)</span><br><span class="line">                    .build());</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
-
+        <p>使用vim编辑文件，中文乱码</p>
+<h1 id="修改vimrc文件，文件路径：-etc-vimrc"><a href="#修改vimrc文件，文件路径：-etc-vimrc" class="headerlink" title="修改vimrc文件，文件路径：&#x2F;etc&#x2F;vimrc"></a>修改vimrc文件，文件路径：&#x2F;etc&#x2F;vimrc</h1><p>cd etc<br>vim vimrc</p>
+<h1 id="在vimrc文件末尾处添加"><a href="#在vimrc文件末尾处添加" class="headerlink" title="在vimrc文件末尾处添加"></a>在vimrc文件末尾处添加</h1><p>set fileencodings&#x3D;utf-8,ucs-bom,gb18030,gbk,gb2312,cp936<br>set termencoding&#x3D;utf-8<br>set encoding&#x3D;utf-8</p>
+<p>vi编辑文件，就去</p>
+<p>cd etc<br>vim virc</p>
 
       </div>
       <div class="post-tags-categories">
@@ -619,7 +622,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>link:  </strong>
-    <a href="/2025/05/09/study/芋道导出/" target="_blank" title="">https://chenjin111.github.io/2025/05/09/study/芋道导出/</a>
+    <a href="/2025/05/08/study/linux/" target="_blank" title="Linux指令">https://chenjin111.github.io/2025/05/08/study/linux/</a>
     </li>
     <li class="post-copyright-license">
       <strong>Copyright notice:   </strong>
@@ -641,16 +644,18 @@
   <div class="post-nav-prev post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="https://pic1.zhimg.com/80/v2-03a22891ccba9bccf6424dfd7cbf4be7_1440w.webp" class="lazyload placeholder" data-srcset="https://pic1.zhimg.com/80/v2-03a22891ccba9bccf6424dfd7cbf4be7_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+      <img class="lazyload lazyload placeholder" src="https://pic2.zhimg.com/80/v2-e22aaad20d20634f506f57fff0fcbc17_1440w.webp" class="lazyload placeholder" data-srcset="https://pic2.zhimg.com/80/v2-e22aaad20d20634f506f57fff0fcbc17_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
     </div>
-    <a href="/2025/05/09/study/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/" class="post-nav-link">
+    <a href="/2025/05/08/study/es/" class="post-nav-link">
       <div class="title">
         <i class="fas fa-angle-left"></i> Prev:
-        <div class="title-text"></div>
+        <div class="title-text">ES学习</div>
       </div>
       
       <!-- <div class="content">
-        android studio(2020,4.1.2)android-studio-ide-201.7042882-win
+        一、es搜索
+1.String、Integer匹配
+1queryBuilder.must(QueryBuilders.t
       </div> -->
     </a>
   </div>
@@ -661,16 +666,15 @@
   <div class="post-nav-next post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="https://pic1.zhimg.com/80/v2-03a22891ccba9bccf6424dfd7cbf4be7_1440w.webp" class="lazyload placeholder" data-srcset="https://pic1.zhimg.com/80/v2-03a22891ccba9bccf6424dfd7cbf4be7_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
+      <img class="lazyload lazyload placeholder" src="https://pic3.zhimg.com/80/v2-7cfc909ebe8d83683909846edd6b5232_1440w.webp" class="lazyload placeholder" data-srcset="https://pic3.zhimg.com/80/v2-7cfc909ebe8d83683909846edd6b5232_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
     </div>
-    <a href="/2025/05/09/study/%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/" class="post-nav-link">
+    <a href="/2025/05/08/study/%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="post-nav-link">
       <div class="title">
         Next: <i class="fas fa-angle-right"></i>
-        <div class="title-text"></div>
+        <div class="title-text">服务器文档</div>
       </div>
       <!-- <div class="content">
-        一、Mybatis
-1.1配置pom文件创建 Maven 来构建项目，则需将下面的依赖代码置于 pom.xml 文件中：
+        一、公共组件安装1.安装docker123yum install -y yum-utils \           de
       </div> -->
     </a>
   </div>
@@ -819,11 +823,11 @@
           <h2>尘瑾</h2>
         
         
-          <p>加油</p>
+          <p>加油少年！！！！</p>
 
         
         
-          <p><span id="jinrishici-sentence">Hexo</span></p>
+          <p><span id="jinrishici-sentence">学习之路</span></p>
           <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
         
       </div>
@@ -892,7 +896,7 @@
   <div class='content'>
     <div class="toc-main">
       <div class="toc-content">
-        <!--  -->
+        <!-- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9vimrc%E6%96%87%E4%BB%B6%EF%BC%8C%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84%EF%BC%9A-etc-vimrc"><span class="toc-text">修改vimrc文件，文件路径：&#x2F;etc&#x2F;vimrc</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9C%A8vimrc%E6%96%87%E4%BB%B6%E6%9C%AB%E5%B0%BE%E5%A4%84%E6%B7%BB%E5%8A%A0"><span class="toc-text">在vimrc文件末尾处添加</span></a></li></ol> -->
         <div class="toc"></div>
       </div>
     </div>
@@ -925,18 +929,18 @@
             
 
             <div class="post-img-box">
-              <a href="/2025/05/09/study/linux/" class="post-img " style="background-size: cover; 
+              <a href="/2025/05/08/hexo/%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://pic1.zhimg.com/80/v2-03a22891ccba9bccf6424dfd7cbf4be7_1440w.webp" class="lazyload placeholder" data-srcset="https://pic1.zhimg.com/80/v2-03a22891ccba9bccf6424dfd7cbf4be7_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://pic2.zhimg.com/80/v2-e22aaad20d20634f506f57fff0fcbc17_1440w.webp" class="lazyload placeholder" data-srcset="https://pic2.zhimg.com/80/v2-e22aaad20d20634f506f57fff0fcbc17_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">05-09</span>
+                  <span class="post-date">05-08</span>
                 
               </div>
-              <a class="post-title" href="/2025/05/09/study/linux/">no title</a>
+              <a class="post-title" href="/2025/05/08/hexo/%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/">创建博客</a>
             </div>
           </div>
         
@@ -946,18 +950,18 @@
             
 
             <div class="post-img-box">
-              <a href="/2025/05/09/study/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/" class="post-img " style="background-size: cover; 
+              <a href="/2025/05/08/study/es/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://pic1.zhimg.com/80/v2-03a22891ccba9bccf6424dfd7cbf4be7_1440w.webp" class="lazyload placeholder" data-srcset="https://pic1.zhimg.com/80/v2-03a22891ccba9bccf6424dfd7cbf4be7_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://pic2.zhimg.com/80/v2-e22aaad20d20634f506f57fff0fcbc17_1440w.webp" class="lazyload placeholder" data-srcset="https://pic2.zhimg.com/80/v2-e22aaad20d20634f506f57fff0fcbc17_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">05-09</span>
+                  <span class="post-date">05-08</span>
                 
               </div>
-              <a class="post-title" href="/2025/05/09/study/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/">no title</a>
+              <a class="post-title" href="/2025/05/08/study/es/">ES学习</a>
             </div>
           </div>
         
@@ -967,18 +971,18 @@
             
 
             <div class="post-img-box">
-              <a href="/2025/05/09/study/%E8%8A%8B%E9%81%93%E5%AF%BC%E5%87%BA/" class="post-img " style="background-size: cover; 
+              <a href="/2025/05/08/study/linux/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://pic1.zhimg.com/80/v2-03a22891ccba9bccf6424dfd7cbf4be7_1440w.webp" class="lazyload placeholder" data-srcset="https://pic1.zhimg.com/80/v2-03a22891ccba9bccf6424dfd7cbf4be7_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://pic2.zhimg.com/80/v2-e22aaad20d20634f506f57fff0fcbc17_1440w.webp" class="lazyload placeholder" data-srcset="https://pic2.zhimg.com/80/v2-e22aaad20d20634f506f57fff0fcbc17_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">05-09</span>
+                  <span class="post-date">05-08</span>
                 
               </div>
-              <a class="post-title" href="/2025/05/09/study/%E8%8A%8B%E9%81%93%E5%AF%BC%E5%87%BA/">no title</a>
+              <a class="post-title" href="/2025/05/08/study/linux/">Linux指令</a>
             </div>
           </div>
         
@@ -988,18 +992,18 @@
             
 
             <div class="post-img-box">
-              <a href="/2025/05/09/study/%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/" class="post-img " style="background-size: cover; 
+              <a href="/2025/05/08/study/%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://pic1.zhimg.com/80/v2-03a22891ccba9bccf6424dfd7cbf4be7_1440w.webp" class="lazyload placeholder" data-srcset="https://pic1.zhimg.com/80/v2-03a22891ccba9bccf6424dfd7cbf4be7_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://pic3.zhimg.com/80/v2-7cfc909ebe8d83683909846edd6b5232_1440w.webp" class="lazyload placeholder" data-srcset="https://pic3.zhimg.com/80/v2-7cfc909ebe8d83683909846edd6b5232_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">05-09</span>
+                  <span class="post-date">05-08</span>
                 
               </div>
-              <a class="post-title" href="/2025/05/09/study/%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/">no title</a>
+              <a class="post-title" href="/2025/05/08/study/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器文档</a>
             </div>
           </div>
         
@@ -1009,18 +1013,18 @@
             
 
             <div class="post-img-box">
-              <a href="/2025/05/09/study/%E8%8A%8B%E9%81%93/" class="post-img " style="background-size: cover; 
+              <a href="/2025/05/08/study/%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://pic1.zhimg.com/80/v2-03a22891ccba9bccf6424dfd7cbf4be7_1440w.webp" class="lazyload placeholder" data-srcset="https://pic1.zhimg.com/80/v2-03a22891ccba9bccf6424dfd7cbf4be7_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://picx.zhimg.com/80/v2-85c31120acff76826ab53ea8934ef4bb_1440w.webp" class="lazyload placeholder" data-srcset="https://picx.zhimg.com/80/v2-85c31120acff76826ab53ea8934ef4bb_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">05-09</span>
+                  <span class="post-date">05-08</span>
                 
               </div>
-              <a class="post-title" href="/2025/05/09/study/%E8%8A%8B%E9%81%93/">no title</a>
+              <a class="post-title" href="/2025/05/08/study/%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/">框架整合</a>
             </div>
           </div>
         
